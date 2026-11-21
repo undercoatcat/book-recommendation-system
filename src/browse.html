@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/browse.css">
+        <script src="./script/algorithm.js" defer></script>
+        <script src="./script/browse.js" defer></script>
+        <script src="./script/index.js" defer></script>
+        <title>OpenBook - Tools</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h2><button onclick="window.location.href='./index.html'" id="logoButton"><b>OpenBook</b></button></h2>
+            </div>
+            
+            <button class="menu-button" id="modeToggle" onclick="toggleMode()">Recommendation Mode</button>
+            <button class="menu-button" id="menuToggle" onclick="toggleMenu()">Menu</button>
+        </nav>
+
+        <div class="fullscreen-menu" id="fullscreenMenu">
+            <a href="../index.html">Home</a>
+            <a href="../src/browse.html">Browse</a>
+            <a href="../src/about.html">About</a>
+        </div>
+        
+        <div class="below-navbar">
+            <h1 id="pageTitle">Browse Books</h1>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for books...">
+
+            <select id="genreFilter">
+                <option value="">All Genres</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="science fiction">Science Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="thrillers">Thriller</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="historical fiction">Historical Fiction</option>
+                <option value="adventure">Adventure</option>
+                <option value="crime">Crime</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="dystopian">Dystopian</option>
+                <option value="young adult fiction">Young Adult</option>
+                <option value="biography">Biography</option>
+                <option value="poetry">Poetry</option>
+                <option value="science">Science</option>
+                <option value="time travel">Time Travel</option>
+            </select>
+        </div>
+
+        <div id="bookList" class="book-list"></div>
+    </body>
+</html>
